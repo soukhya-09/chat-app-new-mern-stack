@@ -1,0 +1,22 @@
+# Node.js related
+node_modules/
+
+# Frontend build files
+frontend/node_modules/
+frontend/build/
+
+# Backend specific
+backend/node_modules/
+backend/.env
+
+# OS specific (macOS/Linux/Windows)
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Ignore specific files in frontend and backend if needed
+frontend/.env
+backend/.env
