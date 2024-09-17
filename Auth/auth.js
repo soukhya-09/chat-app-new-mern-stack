@@ -3,9 +3,10 @@ const jwt = require("jsonwebtoken")
  exports.auth = async(req,res,next)=>{
     try {
         const token = req.cookies.token ;
+       // console.log("token" ,token);
         if(!token){
             return res.status(400).json({
-                message:"Token not found,User not authenticated"
+                message:"Token not found,User not authenticated please login"
             })
         }
         const decode= await jwt.verify(token,process.env.JWT_SECRET);
