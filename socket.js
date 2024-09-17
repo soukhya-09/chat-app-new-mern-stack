@@ -6,9 +6,15 @@ const app = express();
 const server = http.createServer(app)
 const io = new Server(server ,{
     cors:{
+<<<<<<< HEAD
       origin: "http://localhost:3000", 
       methods: ["GET", "POST"],  
       credentials: true  
+=======
+          origin: "http://localhost:3000", 
+      methods: ["GET", "POST"],  
+      credentials: true 
+>>>>>>> 17824c3f9d3235a1fe7175c9c3665d340dd7fea8
     }
 })
 const getreceiveridrealtime = (receiver_id)=>{

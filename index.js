@@ -8,8 +8,10 @@ require("dotenv").config();
 // CORS configuration
 app.use(cors({
 credentials:true,
-origin:process.env.FRONTEND_URL
+origin:process.env.FRONTEND_URL,
     
+    credentials: true,
+  origin: ['https://your-frontend-domain.com', 'http://localhost:3000']
 }));
 
 app.use(express.json());
