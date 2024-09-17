@@ -7,8 +7,9 @@ require("dotenv").config();
 
 // CORS configuration
 app.use(cors({
-    credentials: true,
-    origin: "https://mern-chat-app-lhm1.onrender.com" 
+credentials:true,
+origin:process.env.FRONTEND_URL
+    
 }));
 
 app.use(express.json());
